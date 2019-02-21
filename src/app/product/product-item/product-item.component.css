@@ -3,3 +3,9 @@ border: solid black 2px;
 padding: 10px;
 display: inline-block;
 }
+
+.positive {
+background-color: yellow;
+border: solid black 2px;
+display: inline-block;
+}

@@ -9,13 +9,14 @@ export class ProductItemComponent implements OnInit {
 
   public name: string;
   public price: number;
+  public onSale: boolean;
 
   constructor() { }
 
   ngOnInit() {
   this.name = 'Phillips-head Screwdriver'
   this.price = 24;
-
+  this.onSale = true;
   }
 
 }
