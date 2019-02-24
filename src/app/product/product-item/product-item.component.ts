@@ -13,7 +13,17 @@ export class ProductItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-  this.product = new Product('Phillips-head Screwdriver', 24, true);
+  this.product = new Product('Phillips-head Screwdriver', 24, true, 0);
+  }
+
+  addProduct(event) {
+    this.product.quantity += 1;
+  }
+
+  removeProduct(event) {
+    if (this.product.quantity > 0) {
+    this.product.quantity -= 1;
+    }
   }
 
 }
